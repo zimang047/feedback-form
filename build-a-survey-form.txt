@@ -1,0 +1,67 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+
+  <body>
+    <main>
+      <h1 id="title">Easter Event Feedback Form</h1>
+      <p id="description">What can we do better?</p>
+     </main>
+<form id="survey-form" method="post" action='https://docs.google.com/spreadsheets/d/18Jo0kFc___Nfkh5PDSwbj_BIXZAYXJiOTGNCj91hr9I/edit?gid=0#gid=0'>
+  <fieldset>
+    <label for="name" id="name-label">Name: <input id="name" type="text" placeholder="First and last name" required/></label>                     
+    <label for="email" id="email-label">Email: <input id="email" type="email" placeholder="School email" required/></label>
+    <label for="number" id="number-label">Age: <input id="number" type="number" placeholder="Years alive" min="12" max="99" required/></label>
+  </fieldset>
+    <label> What activity did you participate in?
+    <select id="dropdown">
+      <option value=""">(Select an option)</option>
+      <option value="1">Egg hunt</option>
+      <option value="2">Egg decorating</option>
+    </select>
+    </label>
+    <fieldset>How would you rate the event?
+    <label for="good"><input id="good" type="radio" name="rating" value="good"checked/>Good</label>
+    <label for="bad"><input id="bad" type="radio" name="rating" value="bad" checked/>Bad</label>
+    </fieldset>
+    <fieldset>How can we improve on the event?
+    <label for="safety"><input id="safety" type="checkbox" name="improvements" value="safe" required/>More safety measures</label>
+    <label for="organization"><input id="organize" type="checkbox" name="improvements" value="organize" required/>More staffs and organization</label>
+    </fieldset>
+    <fieldset>
+    <legend>Additional comments?</legend>
+   <textarea id="comments" name="comments" rows="5" cols="30" placeholder="Type here."></textarea>
+    </fieldset>
+    <input id="submit" type="submit" value="Submit">
+</form>
+  </body>
+</html>
+
+** end of index.html **
+
+** start of styles.css **
+
+#title {
+  text-align: center;
+  font-family: verdana;
+}
+#description {
+  text-align: center;
+}
+main{
+background-color: #CAE7D3;
+}
+label{
+  display: block;
+  margin: 0.5em;
+}
+
+
+
+
